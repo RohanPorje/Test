@@ -1,0 +1,31 @@
+<h2>Assignment Drag and Drop</h2>
+<div class="drop-down-container">
+  <div id="container1" class="float-left-child" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    <div class="drag-span-container"   *ngFor="let number of operationNumbers">
+      <span draggable="true" (drop)="drop($event)" (dragstart)="drag($event,number)" id="{{number}}">
+        {{number}}
+      </span>
+    </div>
+  </div>
+
+  <div class="float-left-child">
+    <div id="container2"  (drop)="dropFirst($event)" (dragover)="allowDrop($event)">
+    </div>
+    <br>
+    <div class="select-container">
+      <select class="box" name="status" [(ngModel)]="operation" (click)="onAdd(operation)">
+        <option [value]="'add'" [selected]="operation =='add'">Addition</option>
+        <option [value]="'sub'" [selected]="operation =='sub'">Substraction</option>
+        <option [value]="'mul'" [selected]="operation =='mul'">Multiply</option>
+        <option [value]="'div'" [selected]="operation =='div'">Division</option>
+      </select>
+    </div>
+    <br>
+    <div id="container3"  (drop)="dropSecond($event)" (dragover)="allowDrop($event)">
+    </div>
+    <div class="result">
+      <h4>Calculation is {{result}}</h4>
+    </div>
+  </div>
+</div>
+

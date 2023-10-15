@@ -1,0 +1,63 @@
+#container1 {
+    width: 46px;
+    margin: 10px;
+    padding: 21px 21px 10px 20px;
+    border: 1px solid black;
+    display: grid;
+    line-height: 1rem;
+}
+
+.drag-span-container {
+    max-height: 18px;
+    min-height: 18px;
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+#container2 {
+
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#container3 {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.result {
+    margin-left: 1rem;
+}
+
+.float-left-child {
+    float: left;
+}
+
+.box {
+    width: 125px;
+    height: 30px;
+    border: 1px solid #999;
+    font-size: 15px;
+    color: #333638;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+}
+
+.select-container {
+    padding-left: 2rem;
+    margin-top: 6rem;
+}
