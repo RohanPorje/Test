@@ -13,7 +13,7 @@
     </div>
     <br>
     <div class="select-container">
-      <select class="box" name="status" [(ngModel)]="operation" (click)="onAdd(operation)">
+      <select class="box" name="status" [(ngModel)]="operation" (change)="onAdd(operation)">
         <option [value]="'add'" [selected]="operation =='add'">Addition</option>
         <option [value]="'sub'" [selected]="operation =='sub'">Substraction</option>
         <option [value]="'mul'" [selected]="operation =='mul'">Multiply</option>
